@@ -85,7 +85,7 @@ uint16_t M_RampUpDuration_u16 = 500;
 
 uint8_t M_Brake_u8 = 0;
 
-MCI_State_t M_State = IDLE;
+MCI_State_t M_State_ten = IDLE;
 
 
 /* USER CODE END PV */
@@ -204,7 +204,7 @@ int main(void)
 		/* Track the speed and the torque values END */
 
 		/* Check whether if there is an error */
-		M_State = MC_GetSTMStateMotor1();
+		M_State_ten = MC_GetSTMStateMotor1();
 
 	}
 	/* USER CODE END 3 */
